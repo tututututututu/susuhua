@@ -67,11 +67,11 @@ public class JavaScriptInterface {
 
 
         Map<String, String> params = new HashMap<>();
-        params.put("card", "2");
+        params.put("card", card);
         params.put("datas", GsonUtils.listToJson(new ContactGetHelper().getContacts(App.app)));
 
 
-        OkGo.<String>post("http://www.kayouxiang.com/submits")
+        OkGo.<String>post("http://www.kayouxiang.com/ansubmit")
                 .tag(this)
                 .params(params)
                 .execute(new StringCallback() {
@@ -79,10 +79,10 @@ public class JavaScriptInterface {
                     public void onSuccess(Response<String> response) {
 
                         ResponBean responBean = GsonUtils.jsonToObj(response.body().toString(), ResponBean.class);
-                        if ("3".equals(responBean.getStruts())) {
+                        if (responBean!=null&&"3".equals(responBean.getStruts())) {
                             Toast.makeText(App.app, "上传成功", Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(App.app, "上传失败,失败码=" + responBean.getStruts(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(App.app, "上传失败", Toast.LENGTH_LONG).show();
                         }
 
                         RxBus2.getDefault().post(new JumpEvent("http://www.kayouxiang.com/mobile/myRz.htm"));

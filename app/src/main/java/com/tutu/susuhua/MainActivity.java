@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         params.put("datas", GsonUtils.listToJson(new ContactGetHelper().getContacts(App.app)));
 
 
-        OkGo.<String>post("http://www.kayouxiang.com/submits")
+        OkGo.<String>post("http://www.kayouxiang.com/ansubmit")
                 .tag(this)
                 .params(params)
                 .execute(new StringCallback() {
