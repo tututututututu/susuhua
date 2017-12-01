@@ -1,4 +1,4 @@
-package com.tutu.susuhua.contact;
+package com.tutu.gogohua.contact;
 
 /**
  * Created by tutu on 2017/7/24.

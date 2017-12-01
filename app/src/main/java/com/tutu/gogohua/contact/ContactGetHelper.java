@@ -1,4 +1,4 @@
-package com.tutu.susuhua.contact;
+package com.tutu.gogohua.contact;
 
 import android.content.Context;
 import android.database.Cursor;

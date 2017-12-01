@@ -1,4 +1,4 @@
-package com.tutu.susuhua;
+package com.tutu.gogohua;
 
 import org.junit.Test;
 

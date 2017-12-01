@@ -1,4 +1,4 @@
-package com.tutu.susuhua;
+package com.tutu.gogohua;
 
 import android.app.Application;
 
@@ -13,5 +13,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         app = this;
+
+        SPUtils.initSP("appData");
     }
 }

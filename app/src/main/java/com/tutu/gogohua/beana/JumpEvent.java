@@ -1,4 +1,4 @@
-package com.tutu.susuhua.beana;
+package com.tutu.gogohua.beana;
 
 /**
  * Created by tutu on 2017/9/7.

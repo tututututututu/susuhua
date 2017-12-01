@@ -1,4 +1,4 @@
-package com.tutu.susuhua.rxbus;
+package com.tutu.gogohua.rxbus;
 
 import io.reactivex.Flowable;
 import io.reactivex.processors.FlowableProcessor;

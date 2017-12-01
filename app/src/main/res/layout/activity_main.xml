@@ -6,7 +6,7 @@
     android:id="@+id/parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.tutu.susuhua.MainActivity">
+    tools:context="com.tutu.gogohua.MainActivity">
 
 
 </LinearLayout>
